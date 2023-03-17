@@ -1,0 +1,26 @@
+<footer id="layout-footer">
+    <div>
+        <p>
+            &#169; Anirudh Gupta
+        </p>
+    </div>
+
+    <div>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>                    
+                    <%if(locals.user){%>
+                        <a href="/users/profile/<%=locals.user.id%>">Profile</a>                    
+                    <%}else{%>
+                        <a href="/users/sign-in">Profile</a>                    
+                    <%}%>
+                    
+                    
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
